@@ -1,2 +1,16 @@
 
-Documents/File/LaTeX/Compile/
+
+
+*.aux
+
+*.log
+
+*.lof
+
+*.toc
+
+*.lot
+
+*.brf
+
+*.idx
