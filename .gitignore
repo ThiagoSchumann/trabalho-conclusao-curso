@@ -14,3 +14,19 @@
 *.brf
 
 *.idx
+
+*.bbl
+
+*.blg
+
+*.fdb_latexmk
+
+*.fls
+
+*.ilg
+
+*.ind
+
+Documents/File/LaTeX/Compile/
+
+*.gz
