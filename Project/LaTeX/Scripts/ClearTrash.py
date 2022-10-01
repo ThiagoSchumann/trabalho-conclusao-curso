@@ -1,6 +1,6 @@
 import os
 
-path = r'G:\Meu Drive\Education\UDESC\ESO\TCC\Documents\File\LaTeX'
+path = r'G:\Meu Drive\Education\UDESC\ESO\TCC\Project\LaTeX'
 trash_files = ['.aux',
                '.gz',
                '.bbl',
