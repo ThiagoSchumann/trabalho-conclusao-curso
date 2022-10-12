@@ -30,3 +30,7 @@
 Documents/File/LaTeX/Compile/
 
 *.gz
+
+Project/.idea/
+
+.idea/
