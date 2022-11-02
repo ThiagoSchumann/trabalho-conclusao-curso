@@ -50,36 +50,17 @@
 \input{PacotesBasicos}	% Incliu pacotes básicos 
 
 % -----------------------------------------------------------------
-% Você pode adicionar seus pacotes a partir desta linha;
-% -----------------------------------------------------------------
-
-%\usepackage[showframe,pass]{geometry}
-%\usepackage[11,12]{pagesel}
-
-% -----------------------------------------------------------------
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % -----------------------------------------------------------------
 \titulo{Desenvolvimento de Um Jogo para Auxiliar a Educação Financeira nas Escolas}%
 
 \autor{Thiago Artur {}Schumann}%
 \orientador{Marcelo {}de Souza}%
-
-% ATENÇÃO: O símbolo {} indica o sobrenome para a ficha catalográfica.
-% Exemplo: Sherlock Holmes {}da Silva para sobrenomes compostos;
-% Exemplo: Arnold Alois {}Schwarzenegger para sobrenome simples.
-
 \instituicao{Universidade do Estado de Santa Catarina, Centro de Educação Superior do Alto Vale do Itajaí, Departamento de Engenharia de Software}%
-
-%\tipotrabalho{Tese (Doutorado)}
 \tipotrabalho{Trabalho de Conclusão de Curso (Graduação)}
-
-%\preambulo{Tese apresentada ao Programa de Pós--Graduação em Engenharia Elétrica do Centro de Ciências Tecnológicas da Universidade do Estado de Santa Catarina, como requisito parcial para a obtenção do grau de Doutor em Engenharia Elétrica.}
 \preambulo{Trabalho de conclusão apresentado ao curso de Engenharia de Software do Centro de Educação Superior do Alto Vale do Itajaí (CEAVI), da Universidade do Estado de Santa Catarina (UDESC), como requisito parcial para a obtenção do grau de bacharel em Engenharia de Software.}
-
 \local{Ibirama}%
-
 \data{\the\year}%
-% ---
 
 % compila o indice
 \makeindex
@@ -97,9 +78,6 @@
 % -----------------------------------------------------------------
 \pretextual
 
-% Você pode comentar os elementos que não deseja em seu trabalho;
-
-% A capa pode ser escolhida dentro do arquivo Capa.tex (TCC, Master, Doc, ...)
 \include{PreTextuais/Capa}					% Elemento Obrigatório
 \include{PreTextuais/FolhadeRosto}			% Elemento Obrigatório
 % Caso não utilize a Ficha Catalográfica entre na folha de rosto e retire o * de dentro do arquivo FolhadeRosto
@@ -121,21 +99,15 @@
 
 \pagestyle{PagNumReduzida}						% Comando para cabeçalho somente com numeração de página 10pt
 \aliaspagestyle{chapter}{PagNumReduzida}		% Deixar numeração da primeira página com tamanho igual ao resto da numeração
-% ref.: https://groups.google.com/g/abntex2/c/CP7g8ZMgi-c/m/KjfEnn5b9a4J
-
-
-% ---- Mantenha está estrutura, assim você deixa o trabalho mais organizado -------
 
 \include{Textuais/Capitulo01}
-%\include{Textuais/Capitulo02}
+\include{Textuais/Capitulo02}
 %\include{Textuais/Capitulo03}
 
 % -----------------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
 % -----------------------------------------------------------------
 \postextual
-
-% Você pode comentar os elementos que não deseja em seu trabalho;
 
 % Referências bibliográficas
 \bibliography{abntex2-ref_UDESC_2020}	% Elemento Obrigatório
