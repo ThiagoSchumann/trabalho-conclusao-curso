@@ -34,3 +34,7 @@ Documents/File/LaTeX/Compile/
 Project/.idea/
 
 .idea/
+
+Project/out/
+
+out/
