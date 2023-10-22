@@ -1,4 +1,0 @@
-
-python Scripts\ClearTrash.py
-
-pdflatex -output-directory="G:\Meu Drive\Education\UDESC\ESO\TCC\Project\LaTeX\Compile" Trabalho-Conclusao-Curso-ESO-Thiago.tex
