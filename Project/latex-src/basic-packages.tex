@@ -31,7 +31,7 @@
 \usepackage{xstring}							% Manipulação de strings
 \usepackage{pgfplots}							% Pacote de Gráficos
 \usepackage{tikz}								% Pacote de Figuras
-\usepackage[american, cuteinductors,smartlabels, fulldiode, americanvoltages, oldvoltagedirection, smartlabels]{circuitikz}						% Pacote de circuitos elétricos
+\usepackage[american, cuteinductors,smartlabels, fulldiode, siunitx, americanvoltages, oldvoltagedirection, smartlabels]{circuitikz}						% Pacote de circuitos elétricos
 \usepackage{chemformula}						% Pacote para fórmulas químicas
 \usepackage{chngcntr}							% Pacte usado para deixar numeração de equações sequencial (UDESC/CCT)
 \counterwithout{equation}{chapter}
@@ -126,7 +126,7 @@
 
 % Personalização das unidades
 \sisetup{output-decimal-marker = {,}}
-\sisetup{exponent-product = \cdot}%, output-product = \cdot%}%
+\sisetup{exponent-product = \cdot, output-product = \cdot}
 \sisetup{tight-spacing=true}
 \sisetup{group-digits = false}
 

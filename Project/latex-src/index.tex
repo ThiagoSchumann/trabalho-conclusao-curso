@@ -44,10 +44,10 @@
 	english,				% idioma adicional para hifenização
 	brazil,					% o último idioma é o principal do documento
 	fleqn,					% equações alinhadas a esquerda (UDESC/CCT)+
-	]{abntex2}
+]{abntex2}
 \usepackage{hyperref}
 
-\input{PacotesBasicos}	% Incliu pacotes básicos 
+\input{basic-packages}	% Incliu pacotes básicos 
 
 % -----------------------------------------------------------------
 % Informações de dados para CAPA e FOLHA DE ROSTO
@@ -78,19 +78,19 @@
 % -----------------------------------------------------------------
 \pretextual
 
-\include{PreTextuais/Capa}					% Elemento Obrigatório
-\include{PreTextuais/FolhadeRosto}			% Elemento Obrigatório
+\include{pre-textuais/Capa}					% Elemento Obrigatório
+\include{pre-textuais/FolhadeRosto}			% Elemento Obrigatório
 % Caso não utilize a Ficha Catalográfica entre na folha de rosto e retire o * de dentro do arquivo FolhadeRosto
-%\include{PreTextuais/FichaCatalografica}	% Elemento Obrigatório (Verso da Folha)
-%\include{PreTextuais/Errata}				% Elemento Opcional
-%\include{PreTextuais/FolhadeAprovacao}		% Elemento Obrigatório
-%\include{PreTextuais/Dedicatoria}			% Elemento Opcional
-%\include{PreTextuais/Agradecimentos}		% Elemento Opcional
-%\include{PreTextuais/Epigrafe}				% Elemento Opcional
-%\include{PreTextuais/Resumo}				% Elemento Obrigatório
-%\include{PreTextuais/Abstract}				% Elemento Obrigatório
-\include{PreTextuais/Listas}				% Elemento Opcional
-\include{PreTextuais/Sumario}				% Elemento Obrigatório
+%\include{pre-textuais/FichaCatalografica}	% Elemento Obrigatório (Verso da Folha)
+%\include{pre-textuais/Errata}				% Elemento Opcional
+%\include{pre-textuais/FolhadeAprovacao}		% Elemento Obrigatório
+%\include{pre-textuais/Dedicatoria}			% Elemento Opcional
+%\include{pre-textuais/Agradecimentos}		% Elemento Opcional
+%\include{pre-textuais/Epigrafe}				% Elemento Opcional
+%\include{pre-textuais/Resumo}				% Elemento Obrigatório
+%\include{pre-textuais/Abstract}				% Elemento Obrigatório
+\include{pre-textuais/Listas}				% Elemento Opcional
+\include{pre-textuais/Sumario}				% Elemento Obrigatório
 
 % -----------------------------------------------------------------
 % ELEMENTOS TEXTUAIS
@@ -100,9 +100,9 @@
 \pagestyle{PagNumReduzida}						% Comando para cabeçalho somente com numeração de página 10pt
 \aliaspagestyle{chapter}{PagNumReduzida}		% Deixar numeração da primeira página com tamanho igual ao resto da numeração
 
-\include{Textuais/Capitulo01}
-\include{Textuais/Capitulo02}
-%\include{Textuais/Capitulo03}
+\include{textuais/Capitulo01}
+\include{textuais/Capitulo02}
+%\include{textuais/Capitulo03}
 
 % -----------------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -110,14 +110,12 @@
 \postextual
 
 % Referências bibliográficas
-%\bibliography{Referencias}	% Elemento Obrigatório
-\bibliography{../Referencias}
+\bibliography{references}	% Elemento Obrigatório
 
-
-%\include{PosTextuais/Glossario}				% Elemenuto Opcional
-%\include{PosTextuais/Apendices}				% Elemento Opcional
-%\include{PosTextuais/Anexos}				% Elemento Opcional
-%\include{PosTextuais/IndiceRemissivo}		% Elemento Opcional
+%\include{pos-textuais/Glossario}				% Elemenuto Opcional
+%\include{pos-textuais/Apendices}				% Elemento Opcional
+%\include{pos-textuais/Anexos}				% Elemento Opcional
+%\include{pos-textuais/IndiceRemissivo}		% Elemento Opcional
 
 \end{document}
 

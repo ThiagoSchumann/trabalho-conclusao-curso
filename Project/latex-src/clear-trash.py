@@ -1,6 +1,9 @@
 import os
 
-path = r'C:\Projects\trabalho-conclusao-curso\project\LaTeX-project'
+# Crie uma linha de comando onde busca em python o diretório anterior ao atual
+# e o salva em uma variável. Depois, crie uma lista com os arquivos que você
+
+path = os.path.dirname(os.path.realpath(__file__))
 trash_files = ['.aux',
                '.gz',
                '.bbl',

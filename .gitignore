@@ -1,42 +1,22 @@
-
-
-
 *.aux
-
 *.log
-
 *.lof
-
 *.toc
-
 *.lot
-
 *.brf
-
 *.idx
-
 *.bbl
-
 *.blg
-
 *.fdb_latexmk
-
 *.fls
-
 *.ilg
-
 *.ind
-
-Documents/File/LaTeX/Compile/
-
 *.gz
 
-Project/.idea/
+# Diretórios de compilação do LaTeX
+output/
+Scripts/
 
+# Configurações do ambiente de desenvolvimento
 .idea/
-
-Project/out/
-
-out/
-
-project/LaTeX-project/project/LaTeX-project/output/
+.vscode/
