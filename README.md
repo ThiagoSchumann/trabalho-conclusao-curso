@@ -1,4 +1,4 @@
-# Trabalho de Conclusão de Curso
+# Trabalho de Conclusão de Curso (UDESC)
 ## Implementação de um jogo para auxílio na educação financeira no Ensino Fundamental.
 
 [Protótipo Figma][prototype]
