@@ -49,6 +49,13 @@
 
 \input{basic-packages}	% Incliu pacotes básicos
 
+\usepackage{xargs}
+\usepackage[colorinlistoftodos,prependcaption,textsize=footnotesize]{todonotes}
+\newcommand{\com}[2][1=]{\todo[linecolor=green,backgroundcolor=green!25,bordercolor=green]{#2}}
+\newcommand{\icom}[2][1=]{\todo[inline,linecolor=red,backgroundcolor=red!25,bordercolor=red]{#2}}
+\reversemarginpar
+\setlength{\marginparwidth}{2.5cm}
+
 % -----------------------------------------------------------------
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % -----------------------------------------------------------------
