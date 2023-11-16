@@ -20,3 +20,5 @@ Scripts/
 # Configurações do ambiente de desenvolvimento
 .idea/
 .vscode/
+
+project/latex-src/fast-compile.bat
