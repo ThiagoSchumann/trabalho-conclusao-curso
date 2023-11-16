@@ -1,7 +1,7 @@
 
 \chapter{Desenvolvimento}
 
-Este capítulo apresenta a visão geral do jogo proposto, seus requisitos e principais elementos, como personagens e ambientes. Também são detalhados os objetivos e mecânicas do jogo e suas cenas.
+Este capítulo apresenta a visão geral do jogo proposto, seus requisitos e principais elementos, como personagens e ambientes. Também são detalhados os objetivos e mecânicas do jogo e suas cenas. Finalmente, é apresentada a operacionalização do jogo.
 
 \section{Visão Geral}
 
@@ -42,7 +42,7 @@ O jogo é estruturado de forma interativa, oferecendo múltiplos finais baseados
 	\item RN5. Os elementos e enredo do jogo devem seguir a história 1 do livro 5 da ENEF, garantindo alinhamento com os princípios educativos estabelecidos.
 \end{itemize}
 
-\section{Elementos do Jogo}
+\section{Detalhamento do Jogo}
 
 \subsection{Personagens e Ambientes}
 Esta seção detalha os personagens não jogáveis (NPCs, do inglês \textit{non-player character}) e os ambientes (também chamados de \textit{mapas}) que serão fundamentais para a narrativa e jogabilidade do jogo. Cada NPC e mapa pode ser acompanhado de uma imagem e uma descrição detalhada para melhor imersão e compreensão do jogador.
@@ -172,11 +172,11 @@ O jogo ainda apresenta nove ambientes, os quais estão apresentados nas Figuras~
 
 \newpage
 
-\subsection{Objetivos do Jogo}
+\subsection{Objetivos}
 
-No jogo que será desenvolvido no presente trabalho, os jogadores embarcam em uma aventura repleta de desafios e descobertas ao lado do jovem protagonista, Chico. O jogo é estruturado em torno de objetivos claros e progressivos:
+No jogo, os jogadores embarcam em uma aventura repleta de desafios e descobertas ao lado de Chico, o jovem protagonista. O jogo é estruturado em torno de objetivos claros e progressivos.
 
-\medskip\noindent \textbf{Resolução do Mistério Financeiro.}\quad O objetivo principal é solucionar o mistério do aumento súbito nas despesas da papelaria da família e o desaparecimento de moedas. Chico deve conversar com os personagens e tomar decisões informadas para chegar ao fundo do problema.
+\medskip\noindent \textbf{Resolução do Mistério Financeiro.}\quad O objetivo principal é solucionar o mistério do aumento súbito nas despesas da papelaria da família e o desaparecimento de moedas. Chico deve conversar com os personagens e tomar decisões informadas para entender e resolver esse problema.
 
 \medskip\noindent \textbf{Tomada de Decisões Estratégicas.}\quad Em várias etapas, os jogadores são apresentados a cenários onde devem fazer escolhas que afetarão o rumo da história. Por exemplo, a decisão de qual relógio comprar, como reagir a Vicente ou qual local investigar primeiro.
 
@@ -185,13 +185,15 @@ No jogo que será desenvolvido no presente trabalho, os jogadores embarcam em um
 \medskip\noindent \textbf{Chegar a uma Conclusão Satisfatória.}\quad Dependendo das decisões tomadas, os jogadores podem chegar a diferentes finais. O objetivo é guiar Chico e sua família a uma resolução positiva, onde o mistério é solucionado, a papelaria é salva e as lições aprendidas são aplicadas na vida real.
 
 
-\subsection{Mecânicas do Jogo}
+\subsection{Mecânicas}
+
+O jogo apresenta diferentes mecânicas, que implementam a proposta da história, segundo o livro da ENEF. Abaixo são apresentadas as principais mecânicas implementadas.
 
 \medskip\noindent \textbf{Escolhas e Consequências.}\quad O jogo se baseia em uma narrativa interativa, na qual o jogador enfrenta diferentes cenários e situações e deve fazer escolhas que afetarão o rumo da história. Cada escolha pode levar a diferentes resultados, e o jogador deve ponderar as consequências antes de tomar uma decisão.
 
-\medskip\noindent \textbf{Atributos do Personagem.}\quad O personagem principal, Chico, possui atributos como rapidez e agilidade. Estes atributos podem influenciar a capacidade do jogador de superar certos desafios. Por exemplo, se Chico tem uma alta rapidez, ele pode ser capaz de fugir de uma ratazana no porão.
+\medskip\noindent \textbf{Atributos do Personagem.}\quad O personagem principal, Chico, possui atributos como rapidez e agilidade. Esses atributos podem influenciar a capacidade do jogador de superar certos desafios. Por exemplo, se Chico tem uma alta rapidez, ele pode ser capaz de fugir de uma ratazana que encontra ao investigar o porão.
 
-\medskip\noindent \textbf{Pontos de Bônus.}\quad Os jogadores começam com uma quantidade de pontos de bônus que podem ser usados para aumentar os atributos de Chico. Eles devem decidir ao iniciar o jogo como gastar seus 3 pontos bônus.
+\medskip\noindent \textbf{Pontos de Bônus.}\quad Os jogadores começam com uma quantidade de pontos de bônus que podem ser usados para aumentar os atributos de Chico. Eles devem decidir ao iniciar o jogo como investir seus 3 pontos bônus.
 
 \medskip\noindent \textbf{Narrativa Não Linear.}\quad Dependendo das escolhas feitas, os jogadores podem experimentar diferentes cenários e resultados.
 
@@ -203,23 +205,28 @@ No jogo que será desenvolvido no presente trabalho, os jogadores embarcam em um
 
 \medskip\noindent \textbf{Conclusão Variável.}\quad O jogo tem múltiplos finais possíveis, dependendo das decisões tomadas pelo jogador ao longo da história.
 
-Em resumo, é um jogo de aventura narrativa com elementos educacionais e de tomada de decisão, onde as escolhas do jogador afetam diretamente o desfecho da história. É uma mistura envolvente de exploração, interatividade e aprendizado.
 
 \subsection{Cenas}
 
-\subsubsection{\textit{\textbf{Cena 1}}}
+Esta seção descreve as treze cenas implementadas no jogo e as relações entre elas. As cenas são implementadas conforme o livro da ENEF usado como base para desenvolvimento do jogo\com{Colocar referência do livro aqui}. São detalhadas as formas de evolução no jogo, conforme as decisões tomadas pelo jogador.
 
-A sua família conseguiu tudo que tem com muito trabalho e perseverança, e evitando gastar demais. Assim, montaram uma papelaria e compraram um apartamento perto dela, o que permite que, seu pai, Seu Mário possa ir até o trabalho a pé. Sua mãe, Maria José, reveza com seu pai o trabalho na papelaria; Você e sua irmã Maria Aparecida (Cida) gostam de ajudar, mas como seus pais querem que vocês deem preferência aos estudos, eles contrataram um funcionário, o Josimar.
+\icom{Esta seção (cenas) apresenta detalhes desnecessários, como as falas dos personagens. Além disso, é igual ao livro da ENEF e, portanto, você deve cuidar para não se considerado plágio. Sugiro resumir cada cena em um parágrafo, descrevendo o que acontece, mas sem usar o texto da ENEF. Ficará uma seção mais curta.}
 
-Quando você chega da escola, encontra o seu pai e a sua mãe conversando muito preocupados:
+\subsubsection*{\textit{\textbf{Cena 1}}}
+
+A sua família conseguiu tudo que tem com muito trabalho e perseverança, e evitando gastar demais. Assim, montaram uma papelaria e compraram um apartamento perto dela, o que permite que, seu pai, Seu Mário possa ir até o trabalho a pé. Sua mãe, Maria José, reveza com seu pai o trabalho na papelaria. Você e sua irmã Maria Aparecida (Cida) gostam de ajudar, mas como seus pais querem que vocês priorizem os estudos, eles contrataram um funcionário, o Josimar. Quando você chega da escola, encontra o seu pai e a sua mãe conversando muito preocupados:
 
 -- Não sei mais o que fazer, Maria. As contas não param de subir e já procurei as moedas por toda parte e não encontro!
+
 -- Você não está achando que o Josimar...
+
 -- De forma alguma, eu confio no rapaz. Mas, não sei o que fazer. Vamos ter que apertar o cinto, cortar despesas até a situação melhorar. Estamos chegando perto do Dia da Criança, então as vendas devem aumentar.
+
 -- Posso ajudar, pai? -- você pergunta ansioso.
+
 -- Pode indo fazer seu dever de casa e se concentrando nos estudos. Deixa esses problemas de adulto com a gente.
 
-Você vai chateado para o quarto, afinal já tem 11 anos e não é mais uma criançinha. Será que seus pais não veem isso, Além do mais, o problema da papelaria também é seu, afinal é dua família! e apesar deles confiarem no Josimar, você toma uma decisão,
+Você vai chateado para o quarto, afinal já tem 11 anos e não é mais uma criancinha. Será que seus pais não veem isso?! Além do mais, o problema da papelaria também é seu, afinal é sua família, e apesar deles confiarem no Josimar, você toma uma decisão.
 
 -- Vou fazer minhas próprias investigações! Tenho certeza de que deve haver algo no porão, o papai não vai lá desde que a luz queimou no mês passado. As moedas podem estar escondidas lá! Vou comprar uma lanterna e dar uma olhada.
 
@@ -227,7 +234,7 @@ Depois de terminar os deveres de casa, você sai para dar uma volta antes de ir 
 
 Em poucos minutos você vai de casa até a loja e observa os relógios até que encontra um que parece muito legal: preto, com detalhes em aço, cronômetro, alarme e resistente à água. E custa só R\$ 30,00.
 
-Distraído, não percebe que o Vicente está lá. Um garoto chato da sua escola que vive provocando os outros. Ele está fascinado olhando para um relógio do Major Trovão, que é todo colorido. Você nem gosta muito do desenho do Major Trovão, mas o Vicente e a maior parte da turma adoram. O Vicente te vê e logo provoca:
+Distraído, não percebe que o Vicente está lá. Um garoto chato da sua escola que vive provocando os outros. Ele está fascinado olhando para um relógio do Major Trovão, que é todo colorido. Você nem gosta muito do desenho do Major Trovão, mas o Vicente e a maior parte da turma adoram. O Vicente lhe vê e logo provoca:
 
 -- O que veio fazer aqui, Chico? Comprar uma pilha nova para aquele seu relógio velho? Acho melhor você ir no brechó e ver se dá para trocar aquela porcaria por balas!
 -- e cai na risada.
@@ -242,7 +249,7 @@ Você fica bravo; seria bom dar uma lição nesse chato. O relógio do Major Tro
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 2}}}
+\subsubsection*{\textit{\textbf{Cena 2}}}
 Você abre a porta com cuidado e desce até o porão, a escada range um pouco. Está muito escuro, mas com a lanterna acesa você consegue ver várias caixas empilhadas umas sobre as outras e sente um leve cheiro de mofo no porão. O pior é um ralo aberto bem no meio do caminho.
 
 -- É melhor avisar meus pais sobre isso. Se der mofo, vamos ter um prejuízo grande com esses cadernos, formulários e livros que não vamos poder vender. E se entrar um bicho por esse ralo? As baratas vão fazer a festa devorando os livros!
@@ -265,7 +272,7 @@ A ratazana corre no seu encalço, vindo cada vez mais rápida!
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 3}}}
+\subsubsection*{\textit{\textbf{Cena 3}}}
 Você entra na cozinha e encontra o Josimar comendo um sanduíche. A cozinha não é grande, tem uma pequena geladeira, um filtro, uma pia, um armário, uma mesa e três cadeiras. Num canto há várias caixas com as coisas que são usadas com mais frequência. Assim, não se tem que descer a toda hora até o depósito no porão para repor algum item na loja.
 
 Você toma um copo de água, enquanto o Josimar termina o lanche e sai. Já que está ali, você decide examinar as caixas que lá estão, em busca das moedas perdidas, mas nada encontra.
@@ -304,7 +311,7 @@ Você para e pensa: “Será que a luz da cozinha ficou ligada o dia inteiro? Ma
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 4}}}
+\subsubsection*{\textit{\textbf{Cena 4}}}
 Você decide que o melhor é deixar o Vicente para lá e comprar o relógio do qual gostou. Afinal, o relógio é para você e não para ele. Você compra o relógio pagando R\$ 30,00 e tomando o cuidado de pedir e guardar a nota fiscal. Quando sai da loja, o Vicente não está mais lá.
 
 Você caminha até a papelaria e no caminho encontra com a turma que está indo para a lanchonete comer alguma coisa. Você os acompanha e mostra seu relógio novo, que faz sucesso com o pessoal, o que te deixa bem feliz.
@@ -332,7 +339,7 @@ Você chega com o sol se pondo e entra rápido; passa por sua mãe, que está at
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 5}}}
+\subsubsection*{\textit{\textbf{Cena 5}}}
 Você sai pela porta e sobe pela escada correndo e gritando o mais que pode. A ratazana lhe segue furiosa escada acima. Ela dá um salto, mas você consegue escapar e grita:
 
 -- Mãe, socorro! É uma ratazana!
@@ -365,7 +372,7 @@ Você sobe a escada e chega até o corredor que dá para a cozinha e o banheiro.
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 6}}}
+\subsubsection*{\textit{\textbf{Cena 6}}}
 
 Você desce até o porão, está bem escuro, afinal o sol já está se pondo, mas essa não é a hora de ter medo. As moedas devem estar lá.
 
@@ -385,7 +392,7 @@ Levantando-se, você vai até as caixas e as examina devagar. Abre uma, olha na 
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 7}}}
+\subsubsection*{\textit{\textbf{Cena 7}}}
 
 Você vai até o banheiro e se depara com o Josimar saindo e contando algumas moedas. Ele sorri para você e vai para a frente da loja para atender o público.
 
@@ -416,7 +423,7 @@ Todos param surpresos, e Vicente sai correndo. Sem perder tempo, você vai atrá
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 8}}}
+\subsubsection*{\textit{\textbf{Cena 8}}}
 Você salta e corre para a porta, então ouve a coisa correndo na sua direção. Você corre o mais que pode, porém está muito escuro. Cadê a porta?! Você se atrapalha todo, tropeça e bate de cara na soleira da porta. Tonto, cai para trás, batendo com as costas no chão.
 Quando tenta se erguer, sente uma dor enorme na mão esquerda e sai gritando.
 
@@ -432,7 +439,7 @@ Infelizmente, sua aventura termina aqui, talvez sua irmã tenha melhor sorte em 
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 9}}}
+\subsubsection*{\textit{\textbf{Cena 9}}}
 
 Você compra o relógio do Major Trovão, guardando a nota fiscal no bolso. O relógio foi caro, mas Vicente fica de boca aberta sem conseguir falar nada. Você sai dali feliz da vida e aproveita para entrar na lanchonete, onde está a maior parte da turma. O pessoal fica impressionado com o seu relógio, e você gasta um bom tempo exibindo-o. Com os R\$ 5,00 que sobraram depois de pagar pelo relógio, você compra um salgado e um suco. O sol está se pondo quando você finalmente toma o caminho da papelaria.
 
@@ -450,7 +457,7 @@ Algumas pessoas que possuem o hábito de ostentar podem ter dificuldades para su
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 10}}}
+\subsubsection*{\textit{\textbf{Cena 10}}}
 Você corre o mais rapidamente que pode, ouvindo aquela coisa que vem em sua perseguição. Está escuro, você salta de um lado para o outro e consegue chegar até a porta. Depois sobe pelas escadas gritando e fazendo o maior barulhão.
 
 Sua mãe aparece no alto da escada para ver o que está havendo e dá o maior grito, apontando para algo às suas costas. Você se arrisca a olhar para trás e vê uma ratazana grande e feia correndo para lhe morder o calcanhar. Você salta bem a tempo de se esquivar da dentada. A ratazana avança para atacar novamente, mas toma uma bela vassourada da sua mãe. Ela mostra os dentes, mas sua mãe avança gritando furiosa e brandindo a vassoura, pronta para acabar com a raça dela. A ratazana, então, foge correndo de volta para o porão.
@@ -481,7 +488,7 @@ Você sobe a escada e chega até o corredor que dá para a cozinha e o banheiro.
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 11}}}
+\subsubsection*{\textit{\textbf{Cena 11}}}
 Você corre a toda velocidade atrás de Vicente e consegue apanhá-lo na rua, ainda perto da papelaria. Ele se sacode e grita:
 
 -- Me larga! Eu não fiz nada!
@@ -526,7 +533,7 @@ Hábito de adiar: é o comportamento de deixar para depois o que poderia ser fei
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 12}}}
+\subsubsection*{\textit{\textbf{Cena 12}}}
 Você sai correndo como uma flecha com a ratazana no seu encalço e salta pela porta.
 
 -- Se esse bicho me morde, arranca um pedaço, e vou ter que tomar um monte de injeções. Será que essa praga está com raiva? -- pensa você.
@@ -568,7 +575,7 @@ Você sobe a escada e chega até o corredor, que dá para a cozinha e o banheiro
 
 \bigskip\medskip
 
-\subsubsection{\textit{\textbf{Cena 13}}}
+\subsubsection*{\textit{\textbf{Cena 13}}}
 Você corre atrás de Vicente, mas ele sai feito um raio pela porta e dispara pela calçada. Você tenta alcançá-lo, mas ele salta um muro, corre por um terreno baldio, sai do outro lado e você acaba perdendo o rastro dele.
 
 Ao voltar para a loja, encontra seu pai preocupado, conversando com Josimar.
@@ -603,7 +610,7 @@ Você se cala envergonhado e vai com seu pai para casa. Lá, você conta o que d
 
 \section{Operacionalização}
 
-No início do jogo, cada jogador recebe três pontos de bônus, que podem ser alocados nas habilidades de força, agilidade e rapidez. A figura~\ref{fig:distribui-bonus} ilustra a interface de distribuição desses pontos. A alocação desses pontos é crucial, pois impacta diretamente nas habilidades do personagem, influenciando o sucesso em diversas atividades dentro do jogo. Além disso, é fornecido ao jogador um valor inicial de R\$ 50,00, que pode ser utilizado na aquisição de itens diversos, tais como relógios, lanches e uma lanterna.
+No início do jogo, cada jogador recebe três pontos de bônus, que podem ser alocados nas habilidades de força, agilidade e rapidez. A Figura~\ref{fig:distribui-bonus} ilustra a interface de distribuição desses pontos. A alocação dos pontos é importante, pois impacta diretamente nas habilidades do personagem e influencia no sucesso em diversas atividades durante o jogo. Além disso, é fornecido ao jogador um valor inicial de R\$ 50,00, que pode ser usado na aquisição de itens diversos, como um relógio, lanche e uma lanterna.
 
 \begin{figure}[!htbp]
 	\centering
@@ -612,9 +619,7 @@ No início do jogo, cada jogador recebe três pontos de bônus, que podem ser al
 	\fonte{Elaborado pelo autor (2023).}\label{fig:distribui-bonus}
 \end{figure}
 
-\newpage
-
-Após a distribuição dos pontos de bônus, o jogador é inserido na narrativa, onde necessita tomar decisões cruciais. A primeira decisão é a escolha de um relógio: um modelo funcional e econômico por R\$ 30,00 ou o relógio do Major Trovão, mais caro R\$ 45,00 e popular entre os colegas. Essa escolha, conforme ilustrado na figura~\ref{fig:escolha-relogio}, influencia o desenrolar da história, pois a aquisição do relógio mais caro limita os recursos financeiros para a compra de outros itens, como a lanterna necessária para a exploração do porão.
+Após a distribuição dos pontos de bônus, o jogador é inserido na narrativa, onde necessita tomar decisões cruciais. A primeira decisão é a escolha de um relógio: um modelo funcional e econômico por R\$ 30,00 ou o relógio do Major Trovão, mais caro (R\$ 45,00) e popular entre os colegas. Essa escolha, ilustrada na Figura~\ref{fig:escolha-relogio}, influencia o desenrolar da história, pois a aquisição do relógio mais caro limita os recursos financeiros para a compra de outros itens, como a lanterna necessária para a exploração do porão.
 
 \begin{figure}[!htbp]
 	\centering
@@ -623,7 +628,7 @@ Após a distribuição dos pontos de bônus, o jogador é inserido na narrativa,
 	\fonte{Elaborado pelo autor (2023).}\label{fig:escolha-relogio}
 \end{figure}
 
-Posteriormente, o jogador se dirige à lanchonete para um encontro com amigos, ocasião em que gasta R\$ 5,00. Esta etapa é retratada na figura~\ref{fig:lanchonete-pos-relogio}, e dependendo da escolha do relógio, o jogador pode ter recursos limitados, conforme demonstrado na figura~\ref{fig:lanchonete-pos-relogio-mt}.
+Posteriormente, o jogador se dirige à lanchonete para um encontro com amigos, ocasião em que gasta R\$ 5,00. Essa etapa é retratada na Figura~\ref{fig:lanchonete-pos-relogio}, e dependendo da escolha do relógio, o jogador pode ter recursos limitados.%, conforme demonstrado na figura~\ref{fig:lanchonete-pos-relogio-mt}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -632,16 +637,14 @@ Posteriormente, o jogador se dirige à lanchonete para um encontro com amigos, o
 	\fonte{Elaborado pelo autor (2023).}\label{fig:lanchonete-pos-relogio}
 \end{figure}
 
-\begin{figure}[!htbp]
-	\centering
-	\caption{Lanche após a compra do relógio Major Trovão.}
-	\includegraphics[scale=0.5]{Textuais/Pictures/lanchonete-pos-relogio-mt.png}
-	\fonte{Elaborado pelo autor (2023).}\label{fig:lanchonete-pos-relogio-mt}
-\end{figure}
+%\begin{figure}[!htbp]
+%	\centering
+%	\caption{Lanche após a compra do relógio Major Trovão.}
+%	\includegraphics[scale=0.5]{Textuais/Pictures/lanchonete-pos-relogio-mt.png}
+%	\fonte{Elaborado pelo autor (2023).}\label{fig:lanchonete-pos-relogio-mt}
+%\end{figure}
 
-\newpage
-
-A próxima fase do jogo envolve a compra de uma lanterna por R\$ 10,00, essencial para investigar o porão da papelaria. A capacidade do jogador de adquirir a lanterna depende das escolhas financeiras anteriores, como representado nas figuras~\ref{fig:compra-lanterna} e~\ref{fig:nao-compra-lanterna}.
+A próxima fase do jogo envolve a compra de uma lanterna por R\$ 10,00, essencial para investigar o porão da papelaria. A capacidade do jogador de adquirir a lanterna depende das escolhas financeiras anteriores, como representado nas Figuras~\ref{fig:compra-lanterna} e~\ref{fig:nao-compra-lanterna}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -657,7 +660,7 @@ A próxima fase do jogo envolve a compra de uma lanterna por R\$ 10,00, essencia
 	\fonte{Elaborado pelo autor (2023).}\label{fig:nao-compra-lanterna}
 \end{figure}
 
-Após a aquisição (ou não) da lanterna, o personagem principal chega à papelaria e se depara com um barulho na cozinha. Nesse momento, é apresentada uma escolha crítica ao jogador, como ilustra a figura~\ref{fig:chega-cozinha-papelaria}: investigar a cozinha ou prosseguir diretamente para o porão.
+Após a aquisição (ou não) da lanterna, o personagem principal chega à papelaria e se depara com um barulho na cozinha. Nesse momento, é apresentada uma escolha crítica ao jogador, ilustrada na Figura~\ref{fig:chega-cozinha-papelaria}: investigar a cozinha ou prosseguir diretamente para o porão. Na cozinha, o jogador encontra Josimar e, após sua saída, descobre um problema na geladeira que gera desperdício de energia. Esta descoberta é representada na Figura~\ref{fig:desperdicio-geladeira}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -666,8 +669,6 @@ Após a aquisição (ou não) da lanterna, o personagem principal chega à papel
 	\fonte{Elaborado pelo autor (2023).}\label{fig:chega-cozinha-papelaria}
 \end{figure}
 
-Na cozinha, o jogador encontra Josimar e, após sua saída, descobre um problema na geladeira que gera desperdício de energia. Esta descoberta é representada na figura~\ref{fig:desperdicio-geladeira}.
-
 \begin{figure}[!htbp]
 	\centering
 	\caption{Descoberta do desperdício de energia pela geladeira.}
@@ -675,7 +676,7 @@ Na cozinha, o jogador encontra Josimar e, após sua saída, descobre um problema
 	\fonte{Elaborado pelo autor (2023).}\label{fig:desperdicio-geladeira}
 \end{figure}
 
-A exploração do porão pode ocorrer com ou sem a lanterna, conforme as figuras~\ref{fig:explorando-porao-com-lanterna} e~\ref{fig:explorando-porao-sem-lanterna} demonstram. A falta de lanterna e uma baixa pontuação em agilidade podem levar a um ataque de ratazana, culminando em um final prematuro do jogo, como mostrado na figura~\ref{fig:game-over}.
+A exploração do porão pode ocorrer com ou sem a lanterna, conforme as Figuras~\ref{fig:explorando-porao-com-lanterna} e~\ref{fig:explorando-porao-sem-lanterna}. A falta de lanterna e uma baixa pontuação em agilidade podem levar a um ataque de ratazana, culminando em um final prematuro do jogo, como mostrado na Figura~\ref{fig:game-over}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -698,10 +699,7 @@ A exploração do porão pode ocorrer com ou sem a lanterna, conforme as figuras
 	\fonte{Elaborado pelo autor (2023).}\label{fig:game-over}
 \end{figure}
 
-\newpage
-\newpage
-
-Se o jogador realizar escolhas adequadas ao longo do jogo, alcança um desfecho positivo. A família descobre a origem dos problemas financeiros e encontra moedas esquecidas, solucionando o mistério. Este desfecho vitorioso é ilustrado na figura~\ref{fig:vitoria}.
+Se o jogador realizar escolhas adequadas ao longo do jogo, alcança um desfecho positivo. A família descobre a origem dos problemas financeiros e encontra as moedas esquecidas, solucionando o mistério. Esse desfecho vitorioso é ilustrado na Figura~\ref{fig:vitoria}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -710,27 +708,22 @@ Se o jogador realizar escolhas adequadas ao longo do jogo, alcança um desfecho 
 	\fonte{Elaborado pelo autor (2023).}\label{fig:vitoria}
 \end{figure}
 
-\section{Análise Crítica do Jogo Mistério Financeiro: A Jornada de Chico}
+\section{Análise Crítica}
 
-\subsection*{Público-Alvo}
-O jogo "Mistério Financeiro" é direcionado para crianças do 5º ano do Ensino Fundamental, demandando abordagens educativas lúdicas e interativas. Este foco no público infantil distingue-o de jogos como \textit{Debt Maze}~\ref{subsec:debt-maze} e \textit{Finance Game}~\ref{subsec:finance-game}, mais apropriados para adultos ou adolescentes.
+Esta seção apresenta uma análise do jogo desenvolvido, comparando com os trabalhos correlatos. Os jogos são analisados segundo diferentes aspectos, como público-alvo, abordagem pedagógica e imersão do jogador.
 
-\subsection*{Metodologia de Ensino}
-Ao contrário do \textit{PlanCash}~\ref{subsec:plancash}, que utiliza uma estrutura de jogo de tabuleiro, e do \textit{InvestPlay}~\ref{subsec:investplay}, baseado em perguntas e respostas, "Mistério Financeiro" emprega uma narrativa interativa RPG. Esta abordagem é particularmente eficaz para engajar crianças mais novas.
+Quanto ao \textbf{público-alvo}, o jogo \textit{Mistério Financeiro} é direcionado para crianças do 5º ano do Ensino Fundamental, demandando abordagens educativas lúdicas e interativas. Esse foco no público infantil o diferencia de jogos como \textit{Debt Maze} (Seção~\ref{subsec:debt-maze}) e \textit{Finance Game} (Seção~\ref{subsec:finance-game}), mais apropriados para adultos ou adolescentes.
 
-\subsection*{Abordagem Pedagógica}
-O jogo promove aprendizagem por meio da exploração e tomada de decisões, similar ao \textit{Debt Maze}~\ref{subsec:debt-maze}, mas de uma forma mais acessível e relevante para o público infantil. As situações financeiras são integradas naturalmente na narrativa, facilitando a compreensão e retenção de conhecimento.
+Quanto à \textbf{metodologia de ensino}, ao contrário do \textit{PlanCash} (Seção~\ref{subsec:plancash}), que utiliza uma estrutura de jogo de tabuleiro, e do \textit{InvestPlay} (Seção~\ref{subsec:investplay}), baseado em perguntas e respostas, o jogo \textit{Mistério Financeiro} emprega uma narrativa interativa no formato de RPG. Essa abordagem é particularmente eficaz para engajar crianças mais jovens\com{Se tiver alguma referência sobre esse engajamento, incluir aqui.}.
 
-\subsection*{Imersão Narrativa}
-A rica narrativa de Chico e sua família em "Mistério Financeiro" oferece uma experiência imersiva, em contraste com o \textit{PlanCash}~\ref{subsec:plancash}, cujo formato de jogo de tabuleiro pode limitar o envolvimento narrativo.
+Em relação à \textbf{abordagem pedagógica}, o jogo promove aprendizagem por meio da exploração e tomada de decisões, similar ao \textit{Debt Maze}, mas de uma forma mais acessível e relevante para o público infantil. As situações financeiras são integradas naturalmente na narrativa, facilitando a compreensão e retenção de conhecimento.
 
-\subsection*{Contextualização Cultural e Linguística}
-O "Mistério Financeiro" destaca-se pela sua forte contextualização no cenário brasileiro e uso do português como idioma principal, diferenciando-se de jogos como o \textit{Debt Maze}~\ref{subsec:debt-maze}, que apresentam barreiras linguísticas para o público brasileiro.
+Em relação à \textbf{imersão}, a rica narrativa de Chico e sua família em \textit{Mistério Financeiro} oferece uma experiência imersiva, em contraste com o \textit{PlanCash}, cujo formato de jogo de tabuleiro pode limitar o envolvimento narrativo e, por consequência, o engajamento e o aprendizado.
 
-\subsection*{Aderência à ENEF}
-Este jogo está alinhado com os princípios da Estratégia Nacional de Educação Financeira (ENEF), ao contrário de outros jogos analisados. Esta conformidade assegura que o conteúdo e as lições financeiras estejam em harmonia com os objetivos educacionais nacionais.
+No que diz respeito à \textbf{contextualização cultural e linguística}, o jogo \textit{Mistério Financeiro} se destaca pela sua forte contextualização no cenário brasileiro e uso do português como idioma principal, diferenciando-se de jogos como o \textit{Debt Maze}, que apresentam barreiras linguísticas para o público brasileiro.
 
-\subsection*{Pontos Fracos}
-O "Mistério Financeiro", apesar de suas vantagens, ainda carece de avaliação empírica com alunos, limitando a validação de sua eficácia educacional. Além disso, a narrativa específica pode restringir a re-jogabilidade e a variedade dos cenários financeiros explorados.
+Quanto à \textbf{aderência à ENEF}, este é um ponto forte do jogo \textit{Mistério Financeiro}. Ele está alinhado com os princípios da Estratégia Nacional de Educação Financeira (ENEF), ao contrário dos outros jogos analisados. Esta conformidade assegura que o conteúdo e as lições financeiras estejam em harmonia com os objetivos educacionais nacionais.
 
-A análise comparativa revela que o "Mistério Financeiro" oferece uma abordagem inovadora e adequada para o seu público-alvo, distinguindo-se significativamente dos outros jogos analisados em termos de metodologia, abordagem pedagógica, imersão narrativa, contextualização cultural e aderência à ENEF. Cada jogo tem suas forças, mas o "Mistério Financeiro" ressalta-se pela sua integração única de educação financeira com uma narrativa envolvente, ajustada ao contexto cultural brasileiro.
+Apesar de suas vantagens, é importante destacar alguns \textbf{pontos fracos} do jogo \textit{Mistério Financeiro}. O jogo ainda carece de avaliação empírica com estudantes, o que limita a validação da sua eficácia educacional. Além disso, a narrativa específica pode restringir a re-jogabilidade e a variedade dos cenários financeiros explorados.
+
+Em resumo, a análise comparativa apresentada revela que o jogo \textit{Mistério Financeiro} oferece uma abordagem inovadora e adequada para o seu público-alvo, distinguindo-se significativamente dos outros jogos analisados em termos de metodologia, abordagem pedagógica, imersão narrativa, contextualização cultural e aderência à ENEF. Cada jogo tem seus pontos positivos, mas o \textit{Mistério Financeiro} se sobressai pela sua integração única de educação financeira com uma narrativa envolvente, ajustada ao contexto cultural brasileiro.
